@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+
+        <table>
+            <tr>
+                <td><div><h2 class="notification">Let's start</h2></div></td>
+            </tr>
+            <tr>
+                <td>Point</td>
+                <td><input type="number"  class="input-point"></td>
+            </tr>
+            <tr>
+                <td>Time:</td>
+                <td><span class="time-play"></span></td>
+            </tr>
+        </table>
+        <div class="control-game">
+                    <button class="start-game" onclick="startGame()">Start</button>
+                    <button class="reset-game" onclick="resetGame()">Reset</button>
+                    <button class="auto-play-on" onclick="AutoPlayOn(1)">Auto Play On</button>   
+                    <button class="auto-play-off" onclick="AutoPlayOff()">Auto Play Off</button>
+        </div>
+    </div>
+    <div id="body">
+        <div class="square-container" id="squareContainer"></div>
+    </div>
+    <div class="footer">Next: <span class="next-point"></span></div>
+    <script  src="./game.js"></script>
+</body>
+</html>
